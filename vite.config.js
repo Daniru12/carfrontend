@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/channels': {
-        target: 'https://carbackend-fc3t.vercel.app',
+        target: 'https://carrentba.vercel.app',
         changeOrigin: true,
         secure: false,
       },
