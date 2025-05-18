@@ -32,7 +32,7 @@ const { user } = useContext(AuthContext);  // get logged-in user
 
     setLoadingUser(true)
     setErrorUser(null)
-    fetch(`https://carrentba.vercel.app/profile?user_id=${currentUserId}`)
+    fetch(`https://carrentbalast.vercel.app/profile?user_id=${currentUserId}`)
       .then((res) => {
         if (!res.ok) throw new Error('Failed to load profile')
         return res.json()
@@ -49,7 +49,7 @@ const { user } = useContext(AuthContext);  // get logged-in user
 
     setLoadingBookings(true)
     setErrorBookings(null)
-    fetch(`https://carrentba.vercel.app/api/bookings?user_id=${currentUserId}`)
+    fetch(`https://carrentbalast.vercel.app/api/bookings?user_id=${currentUserId}`)
       .then((res) => {
         if (!res.ok) throw new Error('Failed to load bookings')
         return res.json()

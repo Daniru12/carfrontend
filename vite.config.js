@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/channels': {
-        target: 'https://carrentba.vercel.app',
+        target: 'https://carrentbalast.vercel.app/',
         changeOrigin: true,
         secure: false,
       },

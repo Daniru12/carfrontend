@@ -45,7 +45,7 @@ const SignupPage = () => {
 
     try {
       // Signup API call
-      const response = await fetch('https://carrentba.vercel.app/signup', {
+      const response = await fetch('https://carrentbalast.vercel.app/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password, agreeTerms }),
@@ -65,7 +65,7 @@ const SignupPage = () => {
       toast.success(data.message || 'Signup successful!');
 
       // Auto-login after signup
-      const loginResponse = await fetch('https://carrentba.vercel.app/login', {
+      const loginResponse = await fetch('https://carrentbalast.vercel.app/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
